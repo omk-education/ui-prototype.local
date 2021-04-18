@@ -24,5 +24,6 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
         Route::view('/', 'admin.students.index')->name('index');
         Route::view('/create', 'admin.students.create')->name('create');
         Route::view('/edit', 'admin.students.edit')->name('edit');
+        Route::view('/show', 'admin.students.show')->name('show');
     });
 });

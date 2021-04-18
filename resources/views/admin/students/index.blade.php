@@ -27,8 +27,12 @@
           <td>Иван</td>
           <td>Иванович</td>
           <td class="text-right">
-            <a class="btn btn-sm btn-dark" href="{{ route('admin.students.edit') }}">Редактировать</a>
-            <a class="btn btn-sm btn-danger" href="{{ route('admin.students.index') }}">Удалить</a>
+            <a class="btn btn-sm btn-secondary"
+            href="{{ route('admin.students.show') }}">Детали</a>
+            <a class="btn btn-sm btn-dark"
+            href="{{ route('admin.students.edit') }}">Редактировать</a>
+            <a class="btn btn-sm btn-danger"
+            href="{{ route('admin.students.index') }}">Удалить</a>
           </td>
         </tr>
         @endfor
